@@ -45,6 +45,12 @@ Relevant data only
 
 
 
+#### License
+
+This project is licensed under the terms of the [MIT license](https://github.com/harrisonized/cshl-singlecell-2017-v2/blob/master/LICENSE), just like the original [cshl-singlecell-2017](https://github.com/harrisonized/cshl-singlecell-2017).
+
+
+
 #### Summary
 
 I followed along part of cshl-singlecell-2017 and in the process, streamlined the data-cleaning and visualization. I'm done with this project for now. At some point in the future, I may revisit and finish the rest of it. At that point, I'll probably write a blog post about what I learned.
