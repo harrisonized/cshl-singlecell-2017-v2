@@ -1,6 +1,38 @@
 # Data
 
-Place the following data files in the downloads folder, then use the notebooks to generate the rest.
+Create a downloads folder and download the relevant data. Use the python notebooks to generate the rest. At the end of the project, here are the files in my directory.
+
+```
+data
+├── downloads
+│   ├── retina_clusteridentities.txt
+│   ├── NIHMS687993-supplement-supp_data_2.xlsx
+│   ├── NIHMS687993-supplement-supp_data_4.xlsx
+│   └── GSM1626793_P14Retina_1.digital_expression.txt
+│
+├── big_clusters
+│   ├── big_clusters_expression.csv
+│   ├── big_clusters_cell_metadata.csv
+│   └── big_clusters_gene_expression.csv
+├── amacrine
+│   ├── amacrine_expression.csv
+│   ├── amacrine_cell_metadata.csv
+│   └── amacrine_gene_expression.csv
+├── retina
+│   ├── differential_clusters_expression.csv
+│   ├── differential_clusters_cell_metadata.csv
+│   └── differential_clusters_gene_expression.csv
+│
+├── pca
+│   ├── differential_clusters_pca_lowrank.csv
+│   └── differential_clusters_pca_sparse.csv
+│
+├── NIHMS687993-supplement-supp_data_4v2.csv
+├── mouse_gene_metadata.csv
+│
+├── ISSUES.md
+└── README.md
+```
 
 
 

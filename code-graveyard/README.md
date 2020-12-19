@@ -1,4 +1,4 @@
-Notebooks that became irrelevant after refactoring.
+These are notebooks that became irrelevant after refactoring.
 
 | Notebook                    | Input                                                        | Output                                                       |
 | --------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |

@@ -4,19 +4,19 @@
 
 #### Introduction
 
-I took on this project because I wanted to learn more about data visualization in a biological context. While working in the Yeo lab, one of the people I admired from afar is Olga Botvinnik, who regularly presented on visualizations generated from PCA and clustering. Conveniently, she made the course she taught at Cold Spring Harbor available for free on her Github account, so I felt this was a good place to start.
+I took on this project because I wanted to learn more about data visualization in a biological context. While working in the [Yeo lab](https://yeolab.github.io/), one of the people I admired from afar is [Olga Botvinnik](https://olgabotvinnik.com/), who regularly presented on visualizations generated from PCA and clustering. Conveniently, she made the course she taught at Cold Spring Harbor available for free on [her Github account](https://github.com/olgabot), so I felt this was a good place to start.
 
-The main course repository is cshl-singlecell-2017, and it focuses on generating visualizations using a subset of the the Macosko Drop-Seq dataset, which is available from the macosko2015 repository. The meat of the course is in three notebooks:
+The main course repository is [cshl-singlecell-2017](https://github.com/harrisonized/cshl-singlecell-2017), and it focuses on generating visualizations using a subset of the the Macosko Drop-Seq dataset, which is available from the [macosko2015](https://github.com/harrisonized/macosko2015) repository. The meat of the course is in three notebooks:
 
-1. 1.5_recreate_macosko2015_figure_5
-2. 2.2_apply_clustering_on_knn_graph.ipynb
-3. 50_Example_workflow_reanalyzing_macosko2015.ipynb
+1. [1.5_recreate_macosko2015_figure_5](https://github.com/harrisonized/cshl-singlecell-2017/blob/master/notebooks/1.5_recreate_macosko2015_figure_5.ipynb)
+2. [2.2_apply_clustering_on_knn_graph](https://github.com/harrisonized/cshl-singlecell-2017/blob/master/notebooks/2.2_apply_clustering_on_knn_graph.ipynb)
+3. [50_Example_workflow_reanalyzing_macosko2015](https://github.com/harrisonized/cshl-singlecell-2017/blob/master/notebooks/50_Example_workflow_reanalyzing_macosko2015.ipynb)
 
-Aside from that, there was a small detour in 1.2_Downloading_public_data_Shalek2013 with a trivial amount of EDA.
+Aside from that, there was a small detour in [1.2_Downloading_public_data_Shalek2013](https://github.com/harrisonized/cshl-singlecell-2017/blob/master/notebooks/1.2_Downloading_public_data_Shalek2013.ipynb) with a trivial amount of EDA.
 
-The macosko2015 library has a notebooks folder that documents the data cleaning. Unfortunately, these notebooks were extremely confusing for reasons I discuss in another document. After much refactoring, I filtered out the redundant and irrelevant data, reduced the number of data-cleaning notebooks, grouped together similar functions, and reduced the number and size of saved files. With a smaller number of concise notebooks, it's now clear how the input data for the PCA and clustergrams were generated from the raw data.
+The [macosko2015](https://github.com/harrisonized/macosko2015) library has a [notebooks](https://github.com/harrisonized/macosko2015/tree/master/notebooks) folder that documents the data cleaning. Unfortunately, these notebooks were extremely confusing for reasons I discuss in [another document](https://github.com/harrisonized/cshl-singlecell-2017-v2/blob/master/data/ISSUES.md). After much refactoring, I filtered out the redundant and irrelevant data, reduced the number of data-cleaning notebooks, grouped together similar functions, and reduced the number and size of saved files. With a smaller number of concise notebooks, it's now clear how the input data for the PCA and clustergrams were generated from the raw data.
 
-I don't think many people are looking to study from this obscure course taught 3 years ago, but just in case anyone does, I hope my repository makes it relatively straightforward to jump straight to the meat of visualizing clustergrams and performing PCA.
+I don't think many people are looking to study from this obscure course taught 3 years ago, but just in case anyone does, I hope my repository makes it relatively straightforward to jump straight to the meat of visualizing clustergrams and performing PCA, which is where the value of this course resides.
 
 
 
