@@ -130,5 +130,5 @@ Don't get me wrong. I think it's great that there was any documentation on the d
    >
    > Don't need this for now
 
-9. Code that should have been a one-liners stretched out to many lines over many cell blocks including printing intermediate results.
-   For example, compare 03-subset-digital_expression with 05_make_retina_subsets_for_teaching
+9. Code that should have been a one-liners stretched out to many lines over many cell blocks including printing intermediate results. For example, compare [03-subset-digital_expression](https://github.com/harrisonized/cshl-singlecell-2017-v2/blob/master/03-subset-digital_expression.ipynb) with [05_make_retina_subsets_for_teaching](https://github.com/harrisonized/macosko2015/blob/master/notebooks/05_make_rentina_subsets_for_teaching.ipynb)
+
