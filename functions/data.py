@@ -41,7 +41,7 @@ class ClusterToCellType:
         """ converts the tuple to a dataframe """
         df = pd.DataFrame(self.tuple, columns=['cluster_no', 'cell_type'])
         df = list_to_col(df, 'cluster_no')
-        df['cluster_name'] = df['cluster_no'].apply(lambda x: f'cluster_{str(x).zfill(2)}')
+        df['cluster_id'] = df['cluster_no'].apply(lambda x: f'cluster_{str(x).zfill(2)}')
         return df
 
 

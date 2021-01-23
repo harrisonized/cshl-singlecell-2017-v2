@@ -6,11 +6,10 @@
 
 I took on this project because I wanted to learn more about data visualization in a biological context. While working in the [Yeo lab](https://yeolab.github.io/), one of the people I admired from afar is [Olga Botvinnik](https://olgabotvinnik.com/), who regularly presented on visualizations generated from PCA and clustering. Conveniently, she made the course she taught at Cold Spring Harbor available for free on [her Github account](https://github.com/olgabot), so I felt this was a good place to start.
 
-The main course repository is [cshl-singlecell-2017](https://github.com/harrisonized/cshl-singlecell-2017), and it focuses on generating visualizations using a subset of the the Macosko Drop-Seq dataset, which is available from the [macosko2015](https://github.com/harrisonized/macosko2015) repository. The meat of the course is in three notebooks:
+The main course repository is [cshl-singlecell-2017](https://github.com/harrisonized/cshl-singlecell-2017), and it focuses on generating visualizations using a subset of the the Macosko Drop-Seq dataset, which is available from the [macosko2015](https://github.com/harrisonized/macosko2015) repository. The meat of the course is in two notebooks:
 
 1. [1.5_recreate_macosko2015_figure_5](https://github.com/harrisonized/cshl-singlecell-2017/blob/master/notebooks/1.5_recreate_macosko2015_figure_5.ipynb)
 2. [2.2_apply_clustering_on_knn_graph](https://github.com/harrisonized/cshl-singlecell-2017/blob/master/notebooks/2.2_apply_clustering_on_knn_graph.ipynb)
-3. [50_Example_workflow_reanalyzing_macosko2015](https://github.com/harrisonized/cshl-singlecell-2017/blob/master/notebooks/50_Example_workflow_reanalyzing_macosko2015.ipynb)
 
 Aside from that, there was a small detour in [1.2_Downloading_public_data_Shalek2013](https://github.com/harrisonized/cshl-singlecell-2017/blob/master/notebooks/1.2_Downloading_public_data_Shalek2013.ipynb) with a trivial amount of EDA.
 
@@ -34,14 +33,16 @@ Relevant data only
 
 #### Notebooks
 
-| Notebook                          | Inputs                                                       | Outputs                                                      |
-| --------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| 01-clean-supp_data_4              | NIHMS687993-supplement-supp_data_4.xlsx                      | NIHMS687993-supplement-supp_data_4v2.xlsx                    |
-| 02-make-mouse-gene-metadata       | NIHMS687993-supplement-supp_data_4v2.csv<br />NIHMS687993-supplement-supp_data_2.xlsx | mouse_gene_metadata.csv                                      |
-| 03-subset-digital_expression      | mouse_gene_metadata<br />retina_clusteridentities.txt<br />GSM1626793_P14Retina_1.digital_expression.txt, | big_clusters_expression.csv<br />big_clusters_cell_metadata.csv<br />big_clusters_gene_metadata.csv<br />amacrine_expression.csv<br />amacrine_cell_metadata.csv<br />amacrine_gene_metadata.csv<br />differential_expression.csv<br />differential_cell_metadata.csv<br />differential_gene_metadata.csv |
-| 04-recreate-figure_5-clustergrams | retina_clusteridentities.txt<br />amacrine_expression.csv    | clustergrams figures                                         |
-| 05-recreate-figure_5a-c           | retina_clusteridentities.txt<br />amacrine_expression.csv    | figures                                                      |
-| 06-pca-on-differential_clusters   | differential_clusters_expression.csv                         | differential_clusters_lowrank.csv<br />differential_clusters_sparse.csv |
+| Notebook                                       | Inputs                                                       | Outputs                                                      |
+| ---------------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| 01-clean-supp_data_4                           | NIHMS687993-supplement-supp_data_4.xlsx                      | NIHMS687993-supplement-supp_data_4v2.xlsx                    |
+| 02-make-mouse-gene-metadata                    | NIHMS687993-supplement-supp_data_4v2.csv<br />NIHMS687993-supplement-supp_data_2.xlsx | mouse_gene_metadata.csv                                      |
+| 03-subset-digital_expression                   | mouse_gene_metadata<br />retina_clusteridentities.txt<br />GSM1626793_P14Retina_1.digital_expression.txt, | big_clusters_expression.csv<br />big_clusters_cell_metadata.csv<br />big_clusters_gene_metadata.csv<br />amacrine_expression.csv<br />amacrine_cell_metadata.csv<br />amacrine_gene_metadata.csv<br />differential_expression.csv<br />differential_cell_metadata.csv<br />differential_gene_metadata.csv |
+| 04-recreate-figure_5-clustergrams              | retina_clusteridentities.txt<br />amacrine_expression.csv    | clustergrams figures                                         |
+| 05-recreate-figure_5a-c                        | retina_clusteridentities.txt<br />amacrine_expression.csv    | figures                                                      |
+| 06-pca-on-differential_clusters                | differential_clusters_expression.csv                         | differential_clusters_lowrank.csv<br />differential_clusters_sparse.csv |
+| 07-apply_clustering_on_knn_graph.ipynb         | big_clusters_expression.csv retina_clusteridentities.txt     | figures                                                      |
+| 08-pca-and-tsne-on-differential_clusters.ipynb | differential_clusters_expression.csv                         |                                                              |
 
 
 
@@ -53,4 +54,4 @@ This project is licensed under the terms of the [MIT license](https://github.com
 
 #### Summary
 
-I followed along part of cshl-singlecell-2017 and in the process, streamlined the data-cleaning and visualization. I'm done with this project for now. At some point in the future, I may revisit and finish the rest of it. At that point, I'll probably write a blog post about what I learned.
+I followed along part of cshl-singlecell-2017 and in the process, streamlined the data-cleaning and visualization. I'm done with this project for now. At some point in the future, I may revisit and probably write a blog post about what I learned.
